@@ -1,0 +1,561 @@
+// // // [
+// // //   {
+// // //     "id": 1,
+// // //     "title": "Interstellar",
+// // //     "description": "Exploring space and time.",
+// // //     "duration": "2h 49m",
+// // //     "genre": "Sci-Fi",
+// // //     "rating": 4.7,
+// // //     "poster": "https://linktoimage/interstellar.jpg",
+// // //     "showtimes": [
+// // //       { "time": "2:00 PM", "theater": "PVR CityMall" },
+// // //       { "time": "6:00 PM", "theater": "INOX Plaza" }
+// // //     ],
+// // //     "seats": [
+// // //       { "seatNumber": "A1", "available": true },
+// // //       { "seatNumber": "A2", "available": false }
+// // //     ],
+// // //     "reviews": ["Great movie!", "Loved the visuals."]
+// // //   },
+// // //   ...
+// // // ]
+// // // ==============================================
+// // [
+// //   {
+// //     "id": 1,
+// //     "title": "Interstellar",
+// //     "description": "Exploring space and time.",
+// //     "duration": "2h 49m",
+// //     "genre": "Sci-Fi",
+// //     "rating": 4.7,
+// //     "poster": "https://linktoimage/interstellar.jpg",
+// //     "showtimes": [
+// //       { "time": "2:00 PM", "theater": "PVR CityMall" },
+// //       { "time": "6:00 PM", "theater": "INOX Plaza" }
+// //     ],
+// //     "seats": [
+// //       { "seatNumber": "A1", "available": true },
+// //       { "seatNumber": "A2", "available": false },
+// //       { "seatNumber": "A3", "available": true },
+// //       { "seatNumber": "A4", "available": true },
+// //       { "seatNumber": "A5", "available": false }
+// //     ],
+// //     "reviews": [
+// //       "Great movie!",
+// //       "Loved the visuals.",
+// //       "Amazing soundtrack and storyline."
+// //     ]
+// //   },
+// //   {
+// //     "id": 2,
+// //     "title": "The Dark Knight",
+// //     "description": "Batman battles the Joker to save Gotham.",
+// //     "duration": "2h 32m",
+// //     "genre": "Action",
+// //     "rating": 4.9,
+// //     "poster": "https://linktoimage/thedarkknight.jpg",
+// //     "showtimes": [
+// //       { "time": "12:00 PM", "theater": "PVR CityMall" },
+// //       { "time": "9:00 PM", "theater": "Carnival Cinema" }
+// //     ],
+// //     "seats": [
+// //       { "seatNumber": "B1", "available": true },
+// //       { "seatNumber": "B2", "available": true },
+// //       { "seatNumber": "B3", "available": false },
+// //       { "seatNumber": "B4", "available": false },
+// //       { "seatNumber": "B5", "available": true }
+// //     ],
+// //     "reviews": [
+// //       "Heath Ledger was phenomenal!",
+// //       "Best Batman movie ever.",
+// //       "Keeps you engaged throughout."
+// //     ]
+// //   },
+// //   {
+// //     "id": 3,
+// //     "title": "Inception",
+// //     "description": "A thief who enters dreams must plant an idea.",
+// //     "duration": "2h 28m",
+// //     "genre": "Sci-Fi",
+// //     "rating": 4.8,
+// //     "poster": "https://linktoimage/inception.jpg",
+// //     "showtimes": [
+// //       { "time": "11:00 AM", "theater": "INOX Plaza" },
+// //       { "time": "8:00 PM", "theater": "PVR CityMall" }
+// //     ],
+// //     "seats": [
+// //       { "seatNumber": "C1", "available": true },
+// //       { "seatNumber": "C2", "available": false },
+// //       { "seatNumber": "C3", "available": true },
+// //       { "seatNumber": "C4", "available": true },
+// //       { "seatNumber": "C5", "available": true }
+// //     ],
+// //     "reviews": [
+// //       "Mind-bending!",
+// //       "Terrific screenplay and effects.",
+// //       "A masterpiece by Nolan."
+// //     ]
+// //   },
+// //   {
+// //     "id": 4,
+// //     "title": "La La Land",
+// //     "description": "A jazz pianist and an aspiring actress fall in love.",
+// //     "duration": "2h 8m",
+// //     "genre": "Romance",
+// //     "rating": 4.5,
+// //     "poster": "https://linktoimage/lalaland.jpg",
+// //     "showtimes": [
+// //       { "time": "1:00 PM", "theater": "Carnival Cinema" },
+// //       { "time": "7:00 PM", "theater": "INOX Plaza" }
+// //     ],
+// //     "seats": [
+// //       { "seatNumber": "D1", "available": true },
+// //       { "seatNumber": "D2", "available": true },
+// //       { "seatNumber": "D3", "available": false },
+// //       { "seatNumber": "D4", "available": true },
+// //       { "seatNumber": "D5", "available": true }
+// //     ],
+// //     "reviews": [
+// //       "Beautiful music and story.",
+// //       "Loved the chemistry between leads.",
+// //       "Great visual style."
+// //     ]
+// //   },
+// //   {
+// //     "id": 5,
+// //     "title": "Avengers: Endgame",
+// //     "description": "The Avengers assemble to reverse Thanos' actions.",
+// //     "duration": "3h 2m",
+// //     "genre": "Action",
+// //     "rating": 4.6,
+// //     "poster": "https://linktoimage/avengersendgame.jpg",
+// //     "showtimes": [
+// //       { "time": "3:00 PM", "theater": "PVR CityMall" },
+// //       { "time": "10:00 PM", "theater": "Carnival Cinema" }
+// //     ],
+// //     "seats": [
+// //       { "seatNumber": "E1", "available": false },
+// //       { "seatNumber": "E2", "available": true },
+// //       { "seatNumber": "E3", "available": true },
+// //       { "seatNumber": "E4", "available": true },
+// //       { "seatNumber": "E5", "available": false }
+// //     ],
+// //     "reviews": [
+// //       "Epic conclusion to the saga!",
+// //       "Great action sequences.",
+// //       "Emotional and thrilling."
+// //     ]
+// //   }
+// // ]
+// // ====================
+// [
+//   {
+//     "id": 1,
+//     "title": "Interstellar",
+//     "description": "Exploring space and time.",
+//     "duration": "2h 49m",
+//     "genre": "Sci-Fi",
+//     "rating": 4.7,
+//     "poster": "https://linktoimage/interstellar.jpg",
+//     "showtimes": [
+//       { "time": "2:00 PM", "theater": "PVR CityMall" },
+//       { "time": "6:00 PM", "theater": "INOX Plaza" }
+//     ],
+//     "seats": [
+//       { "seatNumber": "A1", "available": true },
+//       { "seatNumber": "A2", "available": false },
+//       { "seatNumber": "A3", "available": true },
+//       { "seatNumber": "A4", "available": true },
+//       { "seatNumber": "A5", "available": false }
+//     ],
+//     "reviews": [
+//       "Great movie!",
+//       "Loved the visuals.",
+//       "Amazing soundtrack and storyline."
+//     ]
+//   },
+//   {
+//     "id": 2,
+//     "title": "The Dark Knight",
+//     "description": "Batman battles the Joker to save Gotham.",
+//     "duration": "2h 32m",
+//     "genre": "Action",
+//     "rating": 4.9,
+//     "poster": "https://linktoimage/thedarkknight.jpg",
+//     "showtimes": [
+//       { "time": "12:00 PM", "theater": "PVR CityMall" },
+//       { "time": "9:00 PM", "theater": "Carnival Cinema" }
+//     ],
+//     "seats": [
+//       { "seatNumber": "B1", "available": true },
+//       { "seatNumber": "B2", "available": true },
+//       { "seatNumber": "B3", "available": false },
+//       { "seatNumber": "B4", "available": false },
+//       { "seatNumber": "B5", "available": true }
+//     ],
+//     "reviews": [
+//       "Heath Ledger was phenomenal!",
+//       "Best Batman movie ever.",
+//       "Keeps you engaged throughout."
+//     ]
+//   },
+//   {
+//     "id": 3,
+//     "title": "Inception",
+//     "description": "A thief who enters dreams must plant an idea.",
+//     "duration": "2h 28m",
+//     "genre": "Sci-Fi",
+//     "rating": 4.8,
+//     "poster": "https://linktoimage/inception.jpg",
+//     "showtimes": [
+//       { "time": "11:00 AM", "theater": "INOX Plaza" },
+//       { "time": "8:00 PM", "theater": "PVR CityMall" }
+//     ],
+//     "seats": [
+//       { "seatNumber": "C1", "available": true },
+//       { "seatNumber": "C2", "available": false },
+//       { "seatNumber": "C3", "available": true },
+//       { "seatNumber": "C4", "available": true },
+//       { "seatNumber": "C5", "available": true }
+//     ],
+//     "reviews": [
+//       "Mind-bending!",
+//       "Terrific screenplay and effects.",
+//       "A masterpiece by Nolan."
+//     ]
+//   },
+//   {
+//     "id": 4,
+//     "title": "La La Land",
+//     "description": "A jazz pianist and an aspiring actress fall in love.",
+//     "duration": "2h 8m",
+//     "genre": "Romance",
+//     "rating": 4.5,
+//     "poster": "https://linktoimage/lalaland.jpg",
+//     "showtimes": [
+//       { "time": "1:00 PM", "theater": "Carnival Cinema" },
+//       { "time": "7:00 PM", "theater": "INOX Plaza" }
+//     ],
+//     "seats": [
+//       { "seatNumber": "D1", "available": true },
+//       { "seatNumber": "D2", "available": true },
+//       { "seatNumber": "D3", "available": false },
+//       { "seatNumber": "D4", "available": true },
+//       { "seatNumber": "D5", "available": true }
+//     ],
+//     "reviews": [
+//       "Beautiful music and story.",
+//       "Loved the chemistry between leads.",
+//       "Great visual style."
+//     ]
+//   },
+//   {
+//     "id": 5,
+//     "title": "Avengers: Endgame",
+//     "description": "The Avengers assemble to reverse Thanos' actions.",
+//     "duration": "3h 2m",
+//     "genre": "Action",
+//     "rating": 4.6,
+//     "poster": "https://linktoimage/avengersendgame.jpg",
+//     "showtimes": [
+//       { "time": "3:00 PM", "theater": "PVR CityMall" },
+//       { "time": "10:00 PM", "theater": "Carnival Cinema" }
+//     ],
+//     "seats": [
+//       { "seatNumber": "E1", "available": false },
+//       { "seatNumber": "E2", "available": true },
+//       { "seatNumber": "E3", "available": true },
+//       { "seatNumber": "E4", "available": true },
+//       { "seatNumber": "E5", "available": false }
+//     ],
+//     "reviews": [
+//       "Epic conclusion to the saga!",
+//       "Great action sequences.",
+//       "Emotional and thrilling."
+//     ]
+//   }
+// ]
+// =======================
+// [
+//   {
+//     "id": 1,
+//     "title": "Interstellar",
+//     "description": "Exploring space and time.",
+//     "duration": "2h 49m",
+//     "genre": "Sci-Fi",
+//     "rating": 4.7,
+//     "poster": "https://linktoimage/interstellar.jpg",
+//     "showtimes": [
+//       { "time": "2:00 PM", "theater": "PVR CityMall" },
+//       { "time": "6:00 PM", "theater": "INOX Plaza" }
+//     ],
+//     "seats": [
+//       { "seatNumber": "A1", "available": true },
+//       { "seatNumber": "A2", "available": false },
+//       { "seatNumber": "A3", "available": true },
+//       { "seatNumber": "A4", "available": true },
+//       { "seatNumber": "A5", "available": false }
+//     ],
+//     "reviews": [
+//       "Great movie!",
+//       "Loved the visuals.",
+//       "Amazing soundtrack and storyline."
+//     ]
+//   },
+//   {
+//     "id": 2,
+//     "title": "The Dark Knight",
+//     "description": "Batman battles the Joker to save Gotham.",
+//     "duration": "2h 32m",
+//     "genre": "Action",
+//     "rating": 4.9,
+//     "poster": "https://linktoimage/thedarkknight.jpg",
+//     "showtimes": [
+//       { "time": "12:00 PM", "theater": "PVR CityMall" },
+//       { "time": "9:00 PM", "theater": "Carnival Cinema" }
+//     ],
+//     "seats": [
+//       { "seatNumber": "B1", "available": true },
+//       { "seatNumber": "B2", "available": true },
+//       { "seatNumber": "B3", "available": false },
+//       { "seatNumber": "B4", "available": false },
+//       { "seatNumber": "B5", "available": true }
+//     ],
+//     "reviews": [
+//       "Heath Ledger was phenomenal!",
+//       "Best Batman movie ever.",
+//       "Keeps you engaged throughout."
+//     ]
+//   },
+//   {
+//     "id": 3,
+//     "title": "Inception",
+//     "description": "A thief who enters dreams must plant an idea.",
+//     "duration": "2h 28m",
+//     "genre": "Sci-Fi",
+//     "rating": 4.8,
+//     "poster": "https://linktoimage/inception.jpg",
+//     "showtimes": [
+//       { "time": "11:00 AM", "theater": "INOX Plaza" },
+//       { "time": "8:00 PM", "theater": "PVR CityMall" }
+//     ],
+//     "seats": [
+//       { "seatNumber": "C1", "available": true },
+//       { "seatNumber": "C2", "available": false },
+//       { "seatNumber": "C3", "available": true },
+//       { "seatNumber": "C4", "available": true },
+//       { "seatNumber": "C5", "available": true }
+//     ],
+//     "reviews": [
+//       "Mind-bending!",
+//       "Terrific screenplay and effects.",
+//       "A masterpiece by Nolan."
+//     ]
+//   },
+//   {
+//     "id": 4,
+//     "title": "La La Land",
+//     "description": "A jazz pianist and an aspiring actress fall in love.",
+//     "duration": "2h 8m",
+//     "genre": "Romance",
+//     "rating": 4.5,
+//     "poster": "https://linktoimage/lalaland.jpg",
+//     "showtimes": [
+//       { "time": "1:00 PM", "theater": "Carnival Cinema" },
+//       { "time": "7:00 PM", "theater": "INOX Plaza" }
+//     ],
+//     "seats": [
+//       { "seatNumber": "D1", "available": true },
+//       { "seatNumber": "D2", "available": true },
+//       { "seatNumber": "D3", "available": false },
+//       { "seatNumber": "D4", "available": true },
+//       { "seatNumber": "D5", "available": true }
+//     ],
+//     "reviews": [
+//       "Beautiful music and story.",
+//       "Loved the chemistry between leads.",
+//       "Great visual style."
+//     ]
+//   },
+//   {
+//     "id": 5,
+//     "title": "Avengers: Endgame",
+//     "description": "The Avengers assemble to reverse Thanos' actions.",
+//     "duration": "3h 2m",
+//     "genre": "Action",
+//     "rating": 4.6,
+//     "poster": "https://linktoimage/avengersendgame.jpg",
+//     "showtimes": [
+//       { "time": "3:00 PM", "theater": "PVR CityMall" },
+//       { "time": "10:00 PM", "theater": "Carnival Cinema" }
+//     ],
+//     "seats": [
+//       { "seatNumber": "E1", "available": false },
+//       { "seatNumber": "E2", "available": true },
+//       { "seatNumber": "E3", "available": true },
+//       { "seatNumber": "E4", "available": true },
+//       { "seatNumber": "E5", "available": false }
+//     ],
+//     "reviews": [
+//       "Epic conclusion to the saga!",
+//       "Great action sequences.",
+//       "Emotional and thrilling."
+//     ]
+//   }
+// ]
+// =========================================
+// [
+//   {
+//     "id": 1,
+//     "title": "Interstellar",
+//     "description": "Exploring space and time.",
+//     "duration": "2h 49m",
+//     "genre": "Sci-Fi",
+//     "rating": 4.7,
+//     "poster": "https://linktoimage/interstellar.jpg",
+//     "showtimes": [
+//       { "time": "2:00 PM", "theater": "PVR CityMall" },
+//       { "time": "6:00 PM", "theater": "INOX Plaza" }
+//     ],
+//     "seats": [
+//       { "seatNumber": "A1", "available": true },
+//       { "seatNumber": "A2", "available": false },
+//       { "seatNumber": "A3", "available": true },
+//       { "seatNumber": "A4", "available": true },
+//       { "seatNumber": "A5", "available": false }
+//     ],
+//     "reviews": [
+//       "Great movie!",
+//       "Loved the visuals.",
+//       "Amazing soundtrack and storyline."
+//     ]
+//   },
+//   {
+//     "id": 2,
+//     "title": "The Dark Knight",
+//     "description": "Batman battles the Joker to save Gotham.",
+//     "duration": "2h 32m",
+//     "genre": "Action",
+//     "rating": 4.9,
+//     "poster": "https://linktoimage/thedarkknight.jpg",
+//     "showtimes": [
+//       { "time": "12:00 PM", "theater": "PVR CityMall" },
+//       { "time": "9:00 PM", "theater": "Carnival Cinema" }
+//     ],
+//     "seats": [
+//       { "seatNumber": "B1", "available": true },
+//       { "seatNumber": "B2", "available": true },
+//       { "seatNumber": "B3", "available": false },
+//       { "seatNumber": "B4", "available": false },
+//       { "seatNumber": "B5", "available": true }
+//     ],
+//     "reviews": [
+//       "Heath Ledger was phenomenal!",
+//       "Best Batman movie ever!",
+//       "Keeps you engaged throughout."
+//     ]
+//   },
+//   {
+//     "id": 3,
+//     "title": "Inception",
+//     "description": "A thief who enters dreams must plant an idea.",
+//     "duration": "2h 28m",
+//     "genre": "Sci-Fi",
+//     "rating": 4.8,
+//     "poster": "https://linktoimage/inception.jpg",
+//     "showtimes": [
+//       { "time": "11:00 AM", "theater": "INOX Plaza" },
+//       { "time": "8:00 PM", "theater": "PVR CityMall" }
+//     ],
+//     "seats": [
+//       { "seatNumber": "C1", "available": true },
+//       { "seatNumber": "C2", "available": false },
+//       { "seatNumber": "C3", "available": true },
+//       { "seatNumber": "C4", "available": true },
+//       { "seatNumber": "C5", "available": true }
+//     ],
+//     "reviews": [
+//       "Mind-bending!",
+//       "Terrific screenplay and effects.",
+//       "A masterpiece by Nolan."
+//     ]
+//   },
+//   {
+//     "id": 4,
+//     "title": "La La Land",
+//     "description": "A jazz pianist and an aspiring actress fall in love.",
+//     "duration": "2h 8m",
+//     "genre": "Romance",
+//     "rating": 4.5,
+//     "poster": "https://linktoimage/lalaland.jpg",
+//     "showtimes": [
+//       { "time": "1:00 PM", "theater": "Carnival Cinema" },
+//       { "time": "7:00 PM", "theater": "INOX Plaza" }
+//     ],
+//     "seats": [
+//       { "seatNumber": "D1", "available": true },
+//       { "seatNumber": "D2", "available": true },
+//       { "seatNumber": "D3", "available": false },
+//       { "seatNumber": "D4", "available": true },
+//       { "seatNumber": "D5", "available": true }
+//     ],
+//     "reviews": [
+//       "Beautiful music and story.",
+//       "Loved the chemistry between leads.",
+//       "Great visual style."
+//     ]
+//   },
+//   {
+//     "id": 5,
+//     "title": "Avengers: Endgame",
+//     "description": "The Avengers assemble to reverse Thanos' actions.",
+//     "duration": "3h 2m",
+//     "genre": "Action",
+//     "rating": 4.6,
+//     "poster": "https://linktoimage/avengersendgame.jpg",
+//     "showtimes": [
+//       { "time": "3:00 PM", "theater": "PVR CityMall" },
+//       { "time": "10:00 PM", "theater": "Carnival Cinema" }
+//     ],
+//     "seats": [
+//       { "seatNumber": "E1", "available": false },
+//       { "seatNumber": "E2", "available": true },
+//       { "seatNumber": "E3", "available": true },
+//       { "seatNumber": "E4", "available": true },
+//       { "seatNumber": "E5", "available": false }
+//     ],
+//     "reviews": [
+//       "Epic conclusion to the saga!",
+//       "Great action sequences.",
+//       "Emotional and thrilling."
+//     ]
+//   }
+// ]
+// ========================
+[
+  {
+    "id": 1,
+    "title": "Interstellar",
+    "description": "Exploring space and time.",
+    "duration": "2h 49m",
+    "genre": "Sci-Fi",
+    "rating": 4.7,
+    "poster": "https://linktoimage/interstellar.jpg",
+    "showtimes": [
+      { "time": "2:00 PM", "theater": "PVR CityMall" },
+      { "time": "6:00 PM", "theater": "INOX Plaza" }
+    ],
+    "seats": [
+      { "seatNumber": "A1", "available": true },
+      { "seatNumber": "A2", "available": false },
+      { "seatNumber": "A3", "available": true },
+      { "seatNumber": "A4", "available": true },
+      { "seatNumber": "A5", "available": false }
+    ],
+    "reviews": [
+      "Great movie!",
+      "Loved the visuals!",
+      "Amazing soundtrack and storyline!"
+    ]
+  }
+]
